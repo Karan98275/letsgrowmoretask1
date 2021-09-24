@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="lgm.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"><title>Hello, world!</title>
+  <!-- unique -->
+  <script>
+		window.onload = function(){
+			// load thumbnails
+			photo       = document.querySelectorAll('.photo-item');
+			photoLength = photo.length;
+			for(i=0; i<photoLength; i++){
+				photoW = photo[i].naturalWidth;
+				photoH = photo[i].naturalHeight;
+				if(photoW >= photoH){
+					photo[i].style.height = '100px';
+				}
+				else{
+					photo[i].style.width = '100px';
+				}
+			}
+			conentW = photoLength * 115;
+			document.getElementById('photo-container').style.width = conentW+'px';
+			
+			// load first photo
+			firstPhoto    = document.querySelectorAll('.photo-item');
+			firstPhoto    = firstPhoto[0];
+			firstPhotoUrl = firstPhoto.src;
+			firstPhotoAlt = firstPhoto.alt;
+			document.getElementById('photo-display').innerHTML = '<img src="'+firstPhotoUrl+'" id="selected-photo" alt="">';
+			document.getElementById('commentary').innerHTML = firstPhotoAlt;
+		}
+	</script>
+  </head>
+  <body>
+    <section id="D1">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+          <a class="navbar-brand" href=""><b>Zippy</b></a>
+          <button class="navbar-toggler" type="button" data-ds-toggle="collapse" data-ds-target="#navbarSupportedContent" aria-="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li>
+              <a class="nav-item" href="#D1"><b>HOME</b></a>
+            </li>
+            <li>
+              <a class="nav-item" href="#projects"><b>PROJECTS</b></a>
+            </li>
+            <li>
+              <a class="nav-item" href="#pricing"><b>PRICING</b></a>
+            </li>
+            <li>
+              <a class="nav-item" href="#team"><b>TEAM</b></a>
+            </li>
+            <li>
+              <a class="nav-item" href="#blog"><b>BLOGS</b></a>
+            </li>
+            <li>
+              <a class="nav-item" href="#contact"><b>CONTACTS</b></a>
+            </li>
+
+          </ul>
+
+        </nav>
+        <div class="row">
+          <div class="col-lg-6 A1">
+            <h1 style="font-size: 2.5rem;   color: #fff; padding-bottom: 10px; line-height:1.5em;"><b>One page promissing to fill 
+              all your needs</b></h1>
+              <p style="color: azure;"> reiciendis totam aperiam sapiente odit laboriosam inventore optio soluta?</p>
+            <button class="btn  btn-lg bg-warning" style="padding: 10px 20px; "><b>Learn More</b></button>
+            <button class="btn  btn-lg b2"style="padding: 10px 20px;  background-color: #512D6D;s"><b>Learn More</b></button>
+          </div>
+
+        
+        </div>
+      </div>
+      </section>
+    <section id="D2">
+        <h3 style="text-align:center ;"><b>Welcome to Zippy</b></h3>
+        <div class="row A2">
+          <div class="col-lg-7"><p style="font-size: 1.5rem ;line-height:1.5em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore nemo sint ad fuga distinctio amet, impedit neque modi, cumque quisquam. Quam impedit eius quasi culpa ducimus tempore incidunt nemo.</p></div>
+          <div class="col-lg-4 text-end "><img  style=" text-align: end; vertical-align: bottom;height: 180px;  width: 200px;" src="https://img.icons8.com/ios/100/000000/umbrella.png"/>
+        </div>
+            
+        <div class="container-fluid  ">
+          <div class="row A3 text-center">
+            <div class="col-lg-4 col-md-6">
+              <div class="card d2Card">
+                    
+                <center><img class="card-img-top d2cardimg" src="icons8-bell-50(1).png"></center>
+                    <div class="card-title">
+                      <p style="color:#512D6D;"><b>Lorem ipsum</b></p>
+                    </div>
+                    <div class="card-text d2cardtext">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus unde temporibus ab</p>
+                      
+                      <button type="button" class="btn btn-warning btn-lg btn-lg d2btn"><b>Learn More</b></button>
+                      </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card d2Card">
+                    
+                <center><img class="card-img-top d2cardimg" src="icons8-secured-letter-50.png"></center>
+                    <div class="card-title">
+                      <p style="color:#512D6D;"><b>Lorem ipsum</b></p>
+                    </div>
+                    <div class="card-text d2cardtext ">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus unde temporibus ab</p>
+                      
+                      <button type="button" class="btn btn-warning btn-lg btn-lg d2btn"><b>Learn More</b></button>
+                      </div>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="card d2Card">
+                    
+                <center><img class="card-img-top d2cardimg" src="icons8-desk-64.png"></center>
+                    <div class="card-title">
+                        <p style="color:#512D6D;"><b>Lorem ipsum</b></p>
+                    </div>
+                    <div class="card-text d2cardtext">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus unde temporibus ab</p>
+                      
+                      <button type="button" class="btn btn-warning btn-lg btn-lg d2btn"><b>Learn More</b></button>
+                      </div>
+               </div>
+            </div>
+          </div>
+          
+           </div>
+          <hr size="2" style="margin:0px 0 20px 0;">
+        </div>
+    </section>
+    <section id="projects">
+
+      <h2><b>Projects</b></h2>
+      <div class="row  container-fluid A4">
+       
+        <div class="card col-lg-3 col-md-4 projectsCard">
+
+          <img src="p3.jpg" class="card-img-top  projectsImgCard" alt="...">
+
+          <div class="card-body projectsCardBody">
+
+            <h5 class="card-title"><b>Project name</b></h5>
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+            <a href="#" class="btn btn-light projectsCardbtn">Launch Case Study</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 projectsCard">
+
+          <img src="p4.webp" class="card-img-top projectsImgCard" alt="...">
+
+          <div class="card-body projectsCardBody">
+
+            <h5 class="card-title"><b>Project name</b></h5>
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+            <a href="#" class="btn btn-light projectsCardbtn">Launch Case Study</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 projectsCard">
+
+          <img src="p5.webp" class="card-img-top projectsImgCard" alt="...">
+
+          <div class="card-body projectsCardBody">
+
+            <h5 class="card-title"><b>Project name</b></h5>
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+            <a href="#" class="btn btn-light projectsCardbtn">Launch Case Study</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 projectsCard">
+
+          <img src="p6.png" class="card-img-top projectsImgCard" alt="...">
+
+          <div class="card-body projectsCardBody">
+
+            <h5 class="card-title"><b>Project name</b></h5>
+
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+            <a href="#" class="btn btn-light projectsCardbtn">Launch Case Study</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <h3><b>Pricing Table</b></h3>
+      <div class="row container-fluid A5 ">
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card cardA5">
+          
+
+          <div class="card-title">
+              <b>Standard Plan</b>
+          </div>
+          <div class="card-text">
+            <p style="color: darkgray;">free</p>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg   A5btn" type="button">Buy</button>
+
+          </div>
+        </div>
+  </div>
+ <div class="col-lg-4 col-md-6">
+   <div class="card card2 cardA5">
+          
+          <div class="card-title">
+            <b>Buisness  Plan</b>
+             
+          </div>
+          <div class="card-text    ">
+            <p style="color: darkgray;">$49 / month</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg   A5btn" type="button">Buy</button>
+          </div>
+          </div>
+  </div>
+ <div class="col-lg-4 ">
+   <div class="card cardA5">
+         
+          <div class="card-title">
+            <b>Premium Plan</b>
+              
+          </div>
+          <div class="card-text">
+            <p style="color: darkgray;">$99 / month</p>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+
+            <p>Unlimited App Usage</p>
+            <button class="btn btn-lg   A5btn"type="button">Buy</button>
+
+          </div>
+    </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="video">
+      <h3 style="padding:20px 0 50px; color:#fff;font-size: 2rem;"><b>Video Projects</b></h3>
+      
+      
+
+      <div class="owl-carousel owl-theme" >
+        <div class="item-video" data-merge="1" ><iframe width="560" height="315" src="https://www.youtube.com/embed/SD0ZvIKRyk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p></p></div>
+        <div class="item-video" data-merge="1" ><iframe width="560" height="315" src="https://www.youtube.com/embed/QNTeq4QdOsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><o></o></div>
+        <div class="item-video" data-merge="1" ><iframe width="560" height="315" src="https://www.youtube.com/embed/Xrx9v6DhzDo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+         </div>
+    </section>
+    <!-- section team -->
+    <section id="team">
+      <h3 style="padding-bottom : 20px;font-size: 2rem;"><b>Zippy Team</b></h3>
+       
+      <div class="container-fluid "style="padding=20;">
+        <div class="row row1">
+        <div class="col-lg-4 teamdiv"> <div class=" A6img"><img  class="teamimg"  src="00p1.jpg" alt="..."><p><b>sara jhonson</b></p><p>add on</p>
+          <div class="overlay">
+            <svg  class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="30" height="30"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M68.8,154.8v-68.8h-22.93333v-22.93333h22.93333v-12.3152c0,-23.31747 11.35773,-33.55147 30.7364,-33.55147c9.28227,0 14.19,0.688 16.512,1.00333v21.93h-13.21533c-8.22733,0 -11.09973,4.34013 -11.09973,13.13507v9.79827h24.10867l-3.27373,22.93333h-20.83493v68.8z"></path></g></g></svg>
+
+           <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="30" height="30"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M160.53333,39.77213c-5.4868,2.43667 -11.38067,4.0764 -17.56693,4.816c6.31813,-3.784 11.1628,-9.77533 13.44467,-16.91907c-5.90533,3.50307 -12.4528,6.04867 -19.42453,7.42467c-5.57853,-5.94547 -13.52493,-9.66067 -22.31987,-9.66067c-16.8904,0 -30.5816,13.69693 -30.5816,30.5816c0,2.39653 0.2752,4.73573 0.7912,6.966c-25.41587,-1.2728 -47.94787,-13.4504 -63.038,-31.9576c-2.62587,4.51787 -4.13373,9.7696 -4.13373,15.38253c0,10.60667 5.39507,19.9692 13.59947,25.45027c-5.01093,-0.16053 -9.72947,-1.53653 -13.85173,-3.82413c0,0.13187 0,0.25227 0,0.38413c0,14.82067 10.53787,27.18173 24.53293,29.98533c-2.5628,0.69947 -5.26893,1.07213 -8.06107,1.07213c-1.96653,0 -3.8872,-0.19493 -5.75053,-0.54467c3.89293,12.14893 15.1876,20.99547 28.5692,21.242c-10.46333,8.2044 -23.65,13.09493 -37.98333,13.09493c-2.46533,0 -4.902,-0.14333 -7.29853,-0.43c13.5364,8.67453 29.60693,13.73707 46.88147,13.73707c56.25547,0 87.00907,-46.60053 87.00907,-87.0148c0,-1.3244 -0.02867,-2.64307 -0.086,-3.956c5.97987,-4.3172 11.16853,-9.7008 15.26787,-15.82973z"></path></g></g></svg>
+
+  <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="24" height="24"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M15.67708,0c-8.5944,0 -15.67708,7.08268 -15.67708,15.67708v140.64583c0,8.5944 7.08268,15.67708 15.67708,15.67708h140.64583c8.5944,0 15.67708,-7.08268 15.67708,-15.67708v-140.64583c0,-8.5944 -7.08268,-15.67708 -15.67708,-15.67708zM65.84375,27.99479h31.57813l-10.07812,4.92708h-8.51042c3.58333,3.58333 10.75,9.35026 10.75,20.82813c0,11.47787 -6.55078,16.48893 -12.98958,21.5c-2.1556,2.1556 -4.25521,4.3112 -4.25521,7.16667c0,3.58333 2.09961,5.06706 4.25521,6.49479l5.82292,4.25521c6.43881,5.73893 12.98958,10.75 12.98958,21.5c0,14.33333 -14.5013,28.66667 -40.3125,28.66667c-22.22786,0 -32.92187,-10.75 -32.92187,-21.5c0,-5.73893 2.99544,-12.84961 12.31771,-18.58854c9.32226,-5.73893 22.17188,-6.4388 29.33854,-7.16667c-2.1556,-2.85547 -4.25521,-5.76692 -4.25521,-10.07812c0,-2.85547 0.61589,-4.39518 1.34375,-5.82292h-4.92708c-17.91667,0.72787 -27.32292,-11.33789 -27.32292,-23.51563c0,-7.16667 3.63933,-15.14518 10.07813,-20.15625c8.5944,-7.16667 19.20443,-8.51042 27.09896,-8.51042zM56.66146,32.92188c-4.31119,0 -8.5944,2.29558 -10.75,5.15104c-2.85547,3.58333 -3.58333,7.83854 -3.58333,11.42188c0,10.02214 5.65495,27.09896 19.26042,27.09896c3.58333,0 7.89453,-2.09961 10.75,-4.25521c3.58333,-3.58333 3.58333,-8.5944 3.58333,-10.75c0,-11.47786 -6.35482,-28.66667 -19.26042,-28.66667zM121.83333,57.33333h14.33333v21.5h21.5v14.33333h-21.5v21.5h-14.33333v-21.5h-21.5v-14.33333h21.5zM63.82813,101.00521c-1.42774,0 -10.13411,0.08399 -16.57292,2.23958c-3.58333,1.42774 -12.76562,4.92708 -12.76562,15.67708c0,10.75 10.61003,18.58854 27.09896,18.58854c15.0612,0 23.06771,-7.02669 23.06771,-16.34896c0,-7.89453 -5.09505,-12.26172 -16.57292,-20.15625z"></path></g></g></svg>
+            
+          </div></div></div>
+        <div class="col-lg-4 teamdiv"> <div class=" A6img"><img  class="teamimg"  src="00p2.jpg" alt="..."><p><b>sara jhonson</b></p><p>add on</p>
+          <div class="overlay">
+            <svg  class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="30" height="30"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M68.8,154.8v-68.8h-22.93333v-22.93333h22.93333v-12.3152c0,-23.31747 11.35773,-33.55147 30.7364,-33.55147c9.28227,0 14.19,0.688 16.512,1.00333v21.93h-13.21533c-8.22733,0 -11.09973,4.34013 -11.09973,13.13507v9.79827h24.10867l-3.27373,22.93333h-20.83493v68.8z"></path></g></g></svg>
+
+           <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="30" height="30"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M160.53333,39.77213c-5.4868,2.43667 -11.38067,4.0764 -17.56693,4.816c6.31813,-3.784 11.1628,-9.77533 13.44467,-16.91907c-5.90533,3.50307 -12.4528,6.04867 -19.42453,7.42467c-5.57853,-5.94547 -13.52493,-9.66067 -22.31987,-9.66067c-16.8904,0 -30.5816,13.69693 -30.5816,30.5816c0,2.39653 0.2752,4.73573 0.7912,6.966c-25.41587,-1.2728 -47.94787,-13.4504 -63.038,-31.9576c-2.62587,4.51787 -4.13373,9.7696 -4.13373,15.38253c0,10.60667 5.39507,19.9692 13.59947,25.45027c-5.01093,-0.16053 -9.72947,-1.53653 -13.85173,-3.82413c0,0.13187 0,0.25227 0,0.38413c0,14.82067 10.53787,27.18173 24.53293,29.98533c-2.5628,0.69947 -5.26893,1.07213 -8.06107,1.07213c-1.96653,0 -3.8872,-0.19493 -5.75053,-0.54467c3.89293,12.14893 15.1876,20.99547 28.5692,21.242c-10.46333,8.2044 -23.65,13.09493 -37.98333,13.09493c-2.46533,0 -4.902,-0.14333 -7.29853,-0.43c13.5364,8.67453 29.60693,13.73707 46.88147,13.73707c56.25547,0 87.00907,-46.60053 87.00907,-87.0148c0,-1.3244 -0.02867,-2.64307 -0.086,-3.956c5.97987,-4.3172 11.16853,-9.7008 15.26787,-15.82973z"></path></g></g></svg>
+
+  <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="24" height="24"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M15.67708,0c-8.5944,0 -15.67708,7.08268 -15.67708,15.67708v140.64583c0,8.5944 7.08268,15.67708 15.67708,15.67708h140.64583c8.5944,0 15.67708,-7.08268 15.67708,-15.67708v-140.64583c0,-8.5944 -7.08268,-15.67708 -15.67708,-15.67708zM65.84375,27.99479h31.57813l-10.07812,4.92708h-8.51042c3.58333,3.58333 10.75,9.35026 10.75,20.82813c0,11.47787 -6.55078,16.48893 -12.98958,21.5c-2.1556,2.1556 -4.25521,4.3112 -4.25521,7.16667c0,3.58333 2.09961,5.06706 4.25521,6.49479l5.82292,4.25521c6.43881,5.73893 12.98958,10.75 12.98958,21.5c0,14.33333 -14.5013,28.66667 -40.3125,28.66667c-22.22786,0 -32.92187,-10.75 -32.92187,-21.5c0,-5.73893 2.99544,-12.84961 12.31771,-18.58854c9.32226,-5.73893 22.17188,-6.4388 29.33854,-7.16667c-2.1556,-2.85547 -4.25521,-5.76692 -4.25521,-10.07812c0,-2.85547 0.61589,-4.39518 1.34375,-5.82292h-4.92708c-17.91667,0.72787 -27.32292,-11.33789 -27.32292,-23.51563c0,-7.16667 3.63933,-15.14518 10.07813,-20.15625c8.5944,-7.16667 19.20443,-8.51042 27.09896,-8.51042zM56.66146,32.92188c-4.31119,0 -8.5944,2.29558 -10.75,5.15104c-2.85547,3.58333 -3.58333,7.83854 -3.58333,11.42188c0,10.02214 5.65495,27.09896 19.26042,27.09896c3.58333,0 7.89453,-2.09961 10.75,-4.25521c3.58333,-3.58333 3.58333,-8.5944 3.58333,-10.75c0,-11.47786 -6.35482,-28.66667 -19.26042,-28.66667zM121.83333,57.33333h14.33333v21.5h21.5v14.33333h-21.5v21.5h-14.33333v-21.5h-21.5v-14.33333h21.5zM63.82813,101.00521c-1.42774,0 -10.13411,0.08399 -16.57292,2.23958c-3.58333,1.42774 -12.76562,4.92708 -12.76562,15.67708c0,10.75 10.61003,18.58854 27.09896,18.58854c15.0612,0 23.06771,-7.02669 23.06771,-16.34896c0,-7.89453 -5.09505,-12.26172 -16.57292,-20.15625z"></path></g></g></svg>
+            
+          </div></div></div>
+        <div class="col-lg-4 teamdiv"> <div class=" A6img"><img  class="teamimg"  src="00p3.jpg" alt="..."><p><b>sara jhonson</b></p><p>add on</p>
+          <div class="overlay">
+            <svg  class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+            width="30" height="30"
+            viewBox="0 0 172 172"
+            style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M68.8,154.8v-68.8h-22.93333v-22.93333h22.93333v-12.3152c0,-23.31747 11.35773,-33.55147 30.7364,-33.55147c9.28227,0 14.19,0.688 16.512,1.00333v21.93h-13.21533c-8.22733,0 -11.09973,4.34013 -11.09973,13.13507v9.79827h24.10867l-3.27373,22.93333h-20.83493v68.8z"></path></g></g></svg>
+
+           <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="30" height="30"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M160.53333,39.77213c-5.4868,2.43667 -11.38067,4.0764 -17.56693,4.816c6.31813,-3.784 11.1628,-9.77533 13.44467,-16.91907c-5.90533,3.50307 -12.4528,6.04867 -19.42453,7.42467c-5.57853,-5.94547 -13.52493,-9.66067 -22.31987,-9.66067c-16.8904,0 -30.5816,13.69693 -30.5816,30.5816c0,2.39653 0.2752,4.73573 0.7912,6.966c-25.41587,-1.2728 -47.94787,-13.4504 -63.038,-31.9576c-2.62587,4.51787 -4.13373,9.7696 -4.13373,15.38253c0,10.60667 5.39507,19.9692 13.59947,25.45027c-5.01093,-0.16053 -9.72947,-1.53653 -13.85173,-3.82413c0,0.13187 0,0.25227 0,0.38413c0,14.82067 10.53787,27.18173 24.53293,29.98533c-2.5628,0.69947 -5.26893,1.07213 -8.06107,1.07213c-1.96653,0 -3.8872,-0.19493 -5.75053,-0.54467c3.89293,12.14893 15.1876,20.99547 28.5692,21.242c-10.46333,8.2044 -23.65,13.09493 -37.98333,13.09493c-2.46533,0 -4.902,-0.14333 -7.29853,-0.43c13.5364,8.67453 29.60693,13.73707 46.88147,13.73707c56.25547,0 87.00907,-46.60053 87.00907,-87.0148c0,-1.3244 -0.02867,-2.64307 -0.086,-3.956c5.97987,-4.3172 11.16853,-9.7008 15.26787,-15.82973z"></path></g></g></svg>
+
+  <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="24" height="24"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M15.67708,0c-8.5944,0 -15.67708,7.08268 -15.67708,15.67708v140.64583c0,8.5944 7.08268,15.67708 15.67708,15.67708h140.64583c8.5944,0 15.67708,-7.08268 15.67708,-15.67708v-140.64583c0,-8.5944 -7.08268,-15.67708 -15.67708,-15.67708zM65.84375,27.99479h31.57813l-10.07812,4.92708h-8.51042c3.58333,3.58333 10.75,9.35026 10.75,20.82813c0,11.47787 -6.55078,16.48893 -12.98958,21.5c-2.1556,2.1556 -4.25521,4.3112 -4.25521,7.16667c0,3.58333 2.09961,5.06706 4.25521,6.49479l5.82292,4.25521c6.43881,5.73893 12.98958,10.75 12.98958,21.5c0,14.33333 -14.5013,28.66667 -40.3125,28.66667c-22.22786,0 -32.92187,-10.75 -32.92187,-21.5c0,-5.73893 2.99544,-12.84961 12.31771,-18.58854c9.32226,-5.73893 22.17188,-6.4388 29.33854,-7.16667c-2.1556,-2.85547 -4.25521,-5.76692 -4.25521,-10.07812c0,-2.85547 0.61589,-4.39518 1.34375,-5.82292h-4.92708c-17.91667,0.72787 -27.32292,-11.33789 -27.32292,-23.51563c0,-7.16667 3.63933,-15.14518 10.07813,-20.15625c8.5944,-7.16667 19.20443,-8.51042 27.09896,-8.51042zM56.66146,32.92188c-4.31119,0 -8.5944,2.29558 -10.75,5.15104c-2.85547,3.58333 -3.58333,7.83854 -3.58333,11.42188c0,10.02214 5.65495,27.09896 19.26042,27.09896c3.58333,0 7.89453,-2.09961 10.75,-4.25521c3.58333,-3.58333 3.58333,-8.5944 3.58333,-10.75c0,-11.47786 -6.35482,-28.66667 -19.26042,-28.66667zM121.83333,57.33333h14.33333v21.5h21.5v14.33333h-21.5v21.5h-14.33333v-21.5h-21.5v-14.33333h21.5zM63.82813,101.00521c-1.42774,0 -10.13411,0.08399 -16.57292,2.23958c-3.58333,1.42774 -12.76562,4.92708 -12.76562,15.67708c0,10.75 10.61003,18.58854 27.09896,18.58854c15.0612,0 23.06771,-7.02669 23.06771,-16.34896c0,-7.89453 -5.09505,-12.26172 -16.57292,-20.15625z"></path></g></g></svg>
+            
+          </div></div></div>
+      </div>
+      
+        <div class="row row1">
+          <div class="col-lg-4 teamdiv"> <div class=" A6img"><img  class="teamimg"  src="00p4.jpg" alt="..."><p><b>sara jhonson</b></p><p>add on</p>
+            <div class="overlay">
+              <svg  class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="30" height="30"
+              viewBox="0 0 172 172"
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M68.8,154.8v-68.8h-22.93333v-22.93333h22.93333v-12.3152c0,-23.31747 11.35773,-33.55147 30.7364,-33.55147c9.28227,0 14.19,0.688 16.512,1.00333v21.93h-13.21533c-8.22733,0 -11.09973,4.34013 -11.09973,13.13507v9.79827h24.10867l-3.27373,22.93333h-20.83493v68.8z"></path></g></g></svg>
+  
+             <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="30" height="30"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M160.53333,39.77213c-5.4868,2.43667 -11.38067,4.0764 -17.56693,4.816c6.31813,-3.784 11.1628,-9.77533 13.44467,-16.91907c-5.90533,3.50307 -12.4528,6.04867 -19.42453,7.42467c-5.57853,-5.94547 -13.52493,-9.66067 -22.31987,-9.66067c-16.8904,0 -30.5816,13.69693 -30.5816,30.5816c0,2.39653 0.2752,4.73573 0.7912,6.966c-25.41587,-1.2728 -47.94787,-13.4504 -63.038,-31.9576c-2.62587,4.51787 -4.13373,9.7696 -4.13373,15.38253c0,10.60667 5.39507,19.9692 13.59947,25.45027c-5.01093,-0.16053 -9.72947,-1.53653 -13.85173,-3.82413c0,0.13187 0,0.25227 0,0.38413c0,14.82067 10.53787,27.18173 24.53293,29.98533c-2.5628,0.69947 -5.26893,1.07213 -8.06107,1.07213c-1.96653,0 -3.8872,-0.19493 -5.75053,-0.54467c3.89293,12.14893 15.1876,20.99547 28.5692,21.242c-10.46333,8.2044 -23.65,13.09493 -37.98333,13.09493c-2.46533,0 -4.902,-0.14333 -7.29853,-0.43c13.5364,8.67453 29.60693,13.73707 46.88147,13.73707c56.25547,0 87.00907,-46.60053 87.00907,-87.0148c0,-1.3244 -0.02867,-2.64307 -0.086,-3.956c5.97987,-4.3172 11.16853,-9.7008 15.26787,-15.82973z"></path></g></g></svg>
+  
+    <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="24" height="24"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M15.67708,0c-8.5944,0 -15.67708,7.08268 -15.67708,15.67708v140.64583c0,8.5944 7.08268,15.67708 15.67708,15.67708h140.64583c8.5944,0 15.67708,-7.08268 15.67708,-15.67708v-140.64583c0,-8.5944 -7.08268,-15.67708 -15.67708,-15.67708zM65.84375,27.99479h31.57813l-10.07812,4.92708h-8.51042c3.58333,3.58333 10.75,9.35026 10.75,20.82813c0,11.47787 -6.55078,16.48893 -12.98958,21.5c-2.1556,2.1556 -4.25521,4.3112 -4.25521,7.16667c0,3.58333 2.09961,5.06706 4.25521,6.49479l5.82292,4.25521c6.43881,5.73893 12.98958,10.75 12.98958,21.5c0,14.33333 -14.5013,28.66667 -40.3125,28.66667c-22.22786,0 -32.92187,-10.75 -32.92187,-21.5c0,-5.73893 2.99544,-12.84961 12.31771,-18.58854c9.32226,-5.73893 22.17188,-6.4388 29.33854,-7.16667c-2.1556,-2.85547 -4.25521,-5.76692 -4.25521,-10.07812c0,-2.85547 0.61589,-4.39518 1.34375,-5.82292h-4.92708c-17.91667,0.72787 -27.32292,-11.33789 -27.32292,-23.51563c0,-7.16667 3.63933,-15.14518 10.07813,-20.15625c8.5944,-7.16667 19.20443,-8.51042 27.09896,-8.51042zM56.66146,32.92188c-4.31119,0 -8.5944,2.29558 -10.75,5.15104c-2.85547,3.58333 -3.58333,7.83854 -3.58333,11.42188c0,10.02214 5.65495,27.09896 19.26042,27.09896c3.58333,0 7.89453,-2.09961 10.75,-4.25521c3.58333,-3.58333 3.58333,-8.5944 3.58333,-10.75c0,-11.47786 -6.35482,-28.66667 -19.26042,-28.66667zM121.83333,57.33333h14.33333v21.5h21.5v14.33333h-21.5v21.5h-14.33333v-21.5h-21.5v-14.33333h21.5zM63.82813,101.00521c-1.42774,0 -10.13411,0.08399 -16.57292,2.23958c-3.58333,1.42774 -12.76562,4.92708 -12.76562,15.67708c0,10.75 10.61003,18.58854 27.09896,18.58854c15.0612,0 23.06771,-7.02669 23.06771,-16.34896c0,-7.89453 -5.09505,-12.26172 -16.57292,-20.15625z"></path></g></g></svg>
+                 
+            </div></div></div>
+          <div class="col-lg-4 teamdiv"> <div class=" A6img"><img  class="teamimg"  src="00p5.jpg" alt="..."><p><b>sara jhonson</b></p><p>add on</p>
+            <div class="overlay">
+              <svg  class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="30" height="30"
+              viewBox="0 0 172 172"
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M68.8,154.8v-68.8h-22.93333v-22.93333h22.93333v-12.3152c0,-23.31747 11.35773,-33.55147 30.7364,-33.55147c9.28227,0 14.19,0.688 16.512,1.00333v21.93h-13.21533c-8.22733,0 -11.09973,4.34013 -11.09973,13.13507v9.79827h24.10867l-3.27373,22.93333h-20.83493v68.8z"></path></g></g></svg>
+  
+             <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="30" height="30"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M160.53333,39.77213c-5.4868,2.43667 -11.38067,4.0764 -17.56693,4.816c6.31813,-3.784 11.1628,-9.77533 13.44467,-16.91907c-5.90533,3.50307 -12.4528,6.04867 -19.42453,7.42467c-5.57853,-5.94547 -13.52493,-9.66067 -22.31987,-9.66067c-16.8904,0 -30.5816,13.69693 -30.5816,30.5816c0,2.39653 0.2752,4.73573 0.7912,6.966c-25.41587,-1.2728 -47.94787,-13.4504 -63.038,-31.9576c-2.62587,4.51787 -4.13373,9.7696 -4.13373,15.38253c0,10.60667 5.39507,19.9692 13.59947,25.45027c-5.01093,-0.16053 -9.72947,-1.53653 -13.85173,-3.82413c0,0.13187 0,0.25227 0,0.38413c0,14.82067 10.53787,27.18173 24.53293,29.98533c-2.5628,0.69947 -5.26893,1.07213 -8.06107,1.07213c-1.96653,0 -3.8872,-0.19493 -5.75053,-0.54467c3.89293,12.14893 15.1876,20.99547 28.5692,21.242c-10.46333,8.2044 -23.65,13.09493 -37.98333,13.09493c-2.46533,0 -4.902,-0.14333 -7.29853,-0.43c13.5364,8.67453 29.60693,13.73707 46.88147,13.73707c56.25547,0 87.00907,-46.60053 87.00907,-87.0148c0,-1.3244 -0.02867,-2.64307 -0.086,-3.956c5.97987,-4.3172 11.16853,-9.7008 15.26787,-15.82973z"></path></g></g></svg>
+  
+    <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="24" height="24"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M15.67708,0c-8.5944,0 -15.67708,7.08268 -15.67708,15.67708v140.64583c0,8.5944 7.08268,15.67708 15.67708,15.67708h140.64583c8.5944,0 15.67708,-7.08268 15.67708,-15.67708v-140.64583c0,-8.5944 -7.08268,-15.67708 -15.67708,-15.67708zM65.84375,27.99479h31.57813l-10.07812,4.92708h-8.51042c3.58333,3.58333 10.75,9.35026 10.75,20.82813c0,11.47787 -6.55078,16.48893 -12.98958,21.5c-2.1556,2.1556 -4.25521,4.3112 -4.25521,7.16667c0,3.58333 2.09961,5.06706 4.25521,6.49479l5.82292,4.25521c6.43881,5.73893 12.98958,10.75 12.98958,21.5c0,14.33333 -14.5013,28.66667 -40.3125,28.66667c-22.22786,0 -32.92187,-10.75 -32.92187,-21.5c0,-5.73893 2.99544,-12.84961 12.31771,-18.58854c9.32226,-5.73893 22.17188,-6.4388 29.33854,-7.16667c-2.1556,-2.85547 -4.25521,-5.76692 -4.25521,-10.07812c0,-2.85547 0.61589,-4.39518 1.34375,-5.82292h-4.92708c-17.91667,0.72787 -27.32292,-11.33789 -27.32292,-23.51563c0,-7.16667 3.63933,-15.14518 10.07813,-20.15625c8.5944,-7.16667 19.20443,-8.51042 27.09896,-8.51042zM56.66146,32.92188c-4.31119,0 -8.5944,2.29558 -10.75,5.15104c-2.85547,3.58333 -3.58333,7.83854 -3.58333,11.42188c0,10.02214 5.65495,27.09896 19.26042,27.09896c3.58333,0 7.89453,-2.09961 10.75,-4.25521c3.58333,-3.58333 3.58333,-8.5944 3.58333,-10.75c0,-11.47786 -6.35482,-28.66667 -19.26042,-28.66667zM121.83333,57.33333h14.33333v21.5h21.5v14.33333h-21.5v21.5h-14.33333v-21.5h-21.5v-14.33333h21.5zM63.82813,101.00521c-1.42774,0 -10.13411,0.08399 -16.57292,2.23958c-3.58333,1.42774 -12.76562,4.92708 -12.76562,15.67708c0,10.75 10.61003,18.58854 27.09896,18.58854c15.0612,0 23.06771,-7.02669 23.06771,-16.34896c0,-7.89453 -5.09505,-12.26172 -16.57292,-20.15625z"></path></g></g></svg>
+                 
+            </div></div></div>
+          <div class="col-lg-4 teamdiv"> <div class=" A6img"><img  class="teamimg"  src="00p6.jpg" alt="..."><p><b>sara jhonson</b></p><p>add on</p>
+            <div class="overlay">
+              <svg  class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="30" height="30"
+              viewBox="0 0 172 172"
+              style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M68.8,154.8v-68.8h-22.93333v-22.93333h22.93333v-12.3152c0,-23.31747 11.35773,-33.55147 30.7364,-33.55147c9.28227,0 14.19,0.688 16.512,1.00333v21.93h-13.21533c-8.22733,0 -11.09973,4.34013 -11.09973,13.13507v9.79827h24.10867l-3.27373,22.93333h-20.83493v68.8z"></path></g></g></svg>
+  
+             <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="30" height="30"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M160.53333,39.77213c-5.4868,2.43667 -11.38067,4.0764 -17.56693,4.816c6.31813,-3.784 11.1628,-9.77533 13.44467,-16.91907c-5.90533,3.50307 -12.4528,6.04867 -19.42453,7.42467c-5.57853,-5.94547 -13.52493,-9.66067 -22.31987,-9.66067c-16.8904,0 -30.5816,13.69693 -30.5816,30.5816c0,2.39653 0.2752,4.73573 0.7912,6.966c-25.41587,-1.2728 -47.94787,-13.4504 -63.038,-31.9576c-2.62587,4.51787 -4.13373,9.7696 -4.13373,15.38253c0,10.60667 5.39507,19.9692 13.59947,25.45027c-5.01093,-0.16053 -9.72947,-1.53653 -13.85173,-3.82413c0,0.13187 0,0.25227 0,0.38413c0,14.82067 10.53787,27.18173 24.53293,29.98533c-2.5628,0.69947 -5.26893,1.07213 -8.06107,1.07213c-1.96653,0 -3.8872,-0.19493 -5.75053,-0.54467c3.89293,12.14893 15.1876,20.99547 28.5692,21.242c-10.46333,8.2044 -23.65,13.09493 -37.98333,13.09493c-2.46533,0 -4.902,-0.14333 -7.29853,-0.43c13.5364,8.67453 29.60693,13.73707 46.88147,13.73707c56.25547,0 87.00907,-46.60053 87.00907,-87.0148c0,-1.3244 -0.02867,-2.64307 -0.086,-3.956c5.97987,-4.3172 11.16853,-9.7008 15.26787,-15.82973z"></path></g></g></svg>
+  
+    <svg class="iconimg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+  width="24" height="24"
+  viewBox="0 0 172 172"
+  style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M15.67708,0c-8.5944,0 -15.67708,7.08268 -15.67708,15.67708v140.64583c0,8.5944 7.08268,15.67708 15.67708,15.67708h140.64583c8.5944,0 15.67708,-7.08268 15.67708,-15.67708v-140.64583c0,-8.5944 -7.08268,-15.67708 -15.67708,-15.67708zM65.84375,27.99479h31.57813l-10.07812,4.92708h-8.51042c3.58333,3.58333 10.75,9.35026 10.75,20.82813c0,11.47787 -6.55078,16.48893 -12.98958,21.5c-2.1556,2.1556 -4.25521,4.3112 -4.25521,7.16667c0,3.58333 2.09961,5.06706 4.25521,6.49479l5.82292,4.25521c6.43881,5.73893 12.98958,10.75 12.98958,21.5c0,14.33333 -14.5013,28.66667 -40.3125,28.66667c-22.22786,0 -32.92187,-10.75 -32.92187,-21.5c0,-5.73893 2.99544,-12.84961 12.31771,-18.58854c9.32226,-5.73893 22.17188,-6.4388 29.33854,-7.16667c-2.1556,-2.85547 -4.25521,-5.76692 -4.25521,-10.07812c0,-2.85547 0.61589,-4.39518 1.34375,-5.82292h-4.92708c-17.91667,0.72787 -27.32292,-11.33789 -27.32292,-23.51563c0,-7.16667 3.63933,-15.14518 10.07813,-20.15625c8.5944,-7.16667 19.20443,-8.51042 27.09896,-8.51042zM56.66146,32.92188c-4.31119,0 -8.5944,2.29558 -10.75,5.15104c-2.85547,3.58333 -3.58333,7.83854 -3.58333,11.42188c0,10.02214 5.65495,27.09896 19.26042,27.09896c3.58333,0 7.89453,-2.09961 10.75,-4.25521c3.58333,-3.58333 3.58333,-8.5944 3.58333,-10.75c0,-11.47786 -6.35482,-28.66667 -19.26042,-28.66667zM121.83333,57.33333h14.33333v21.5h21.5v14.33333h-21.5v21.5h-14.33333v-21.5h-21.5v-14.33333h21.5zM63.82813,101.00521c-1.42774,0 -10.13411,0.08399 -16.57292,2.23958c-3.58333,1.42774 -12.76562,4.92708 -12.76562,15.67708c0,10.75 10.61003,18.58854 27.09896,18.58854c15.0612,0 23.06771,-7.02669 23.06771,-16.34896c0,-7.89453 -5.09505,-12.26172 -16.57292,-20.15625z"></path></g></g></svg>
+                   
+            </div></div></div>
+         
+         
+          
+          
+  
+        
+  
+        </div>
+      </div>
+      
+    </section>
+<!-- section life in zippy -->
+    <section id="Life_in_zippy">
+      <h3 style="padding-bottom : 0px;font-size: 2rem;"><b>Life in Zippy </b></h3>
+      <div class="container-fluid">
+        <div id="photo-view-container">
+        <div id="photo-display"></div>
+        <div id="commentary"></div>
+        <div id="photo-container-holder">
+          <div id="photo-container" style="margin-left:0;">
+            <div class="photo-holder"><img src="00b1.jpg" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+            <div class="photo-holder"><img src="00b2.jpg" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+            <div class="photo-holder"><img src="p1.jpg" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+            <div class="photo-holder"><img src="00b3.jpg" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+            <div class="photo-holder"><img src="p2.webp" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+            <div class="photo-holder"><img src="00b4.jpg" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+            <div class="photo-holder"><img src="00b5.jpg" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+            <div class="photo-holder"><img src="00b1.jpg" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+            <div class="photo-holder"><img src="00b3.jpg" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+            <div class="photo-holder"><img src="00b6.jpg" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+            <div class="photo-holder"><img src="00b7.jpg" onclick=viewPhoto(this) class="photo-item" alt=""></div>
+          </div>
+        </div>
+        <img id="left" src="https://webdesign-assistant.com/images/dummy/left.png" onclick=leftRight(this) alt="">
+        <img id="right" src="https://webdesign-assistant.com/images/dummy/right.png" onclick=leftRight(this) alt="">
+      </div>
+    </div>   
+         
+    
+    
+  </section>
+  <!-- signup section -->
+    <section id="signup">
+      <h3 class="signh"><b>Newsletter Signup </b></h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 signdiv1"><input type="email"  placeholder=abcd.example.com name=”” style="padding:7px 4px; text-align:left;" size=35px >
+            
+          </div>
+          <div class="col-lg-6 signdiv2"> <input type="button" value="Sign up" class="fbtn">
+            <br>
+            <br>
+            <input type="button" value="Sign up" class="fbtn2"> </div>
+        </div>
+          </div>
+        
+      </div>
+    </section>
+    <!-- section blog -->
+    <section id="blog">
+      <h3 style="padding-bottom : 0px;font-size: 2rem;"><b>Blog </b></h3>
+    
+      
+      <div class="row blogrow">
+        
+          <div class="col-lg-4 col-md-6 col-sm-12 card blogCard">
+            <img src="t3.jpg" alt=",,,,">
+            <div class="card-text blogcardtext">
+              <p><b>Lormmm ipsum text neeed color</b></p>
+              <p>199 days</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus unde temporibus ab</p>
+              <button type="button" class="btn btn-warning btn-sm  d2btn"><b>Read More</b></button>
+                
+            </div>    
+                
+            
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 card blogCard">
+            <img src="t1.jpg" alt=",,,,">
+            <div class="card-text blogcardtext">
+              <p><b>Lormmm ipsum text neeed color</b></p>
+              <p>199 days</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus unde temporibus ab</p>
+              <button type="button" class="btn btn-warning btn-sm  d2btn" ><b>Read More</b></button>
+                
+            </div>    
+                
+            
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 card blogCard">
+            <img src="t2.jpg" alt=",,,,">
+            <div class="card-text blogcardtext">
+              <p><b>Lormmm ipsum text neeed color</b></p>
+              <p>199 days</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ducimus unde temporibus ab</p>
+              <button type="button" class="btn btn-warning btn-sm  d2btn"><b>Read More</b></button>
+                
+            </div>    
+                
+            
+          </div>
+        </div>
+      
+      
+    </section>
+    <!-- setion cntact -->
+    <section id="contact">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6  leftside">
+           <!-- <img src="contact.webp" alt="" sizes="100%" srcset="">
+       -->   </div> 
+          <div class="col-lg-6 rightside">
+             <h3 class="cnth"><b>Contact</b></h3>
+             <div class="contactdiv">
+            <form action="">
+              <label for="fname">NAME</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              <label for="Email">EMAIL ADDRESS</label><br>
+              <input type="email" id="Email" name="Email"><br>
+              <label >SUBJECT</label><br>
+              <input type="text"  name="sub"><br>
+              <label >MESSAGE</label><br>
+              <textarea id="w3review" name="w3review" rows="4" cols="19">
+
+              </textarea>
+              <input  class="cntbtn" type="button" value="Submit">
+            </form> 
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION FOOTER -->
+    <Section id="footer">
+      <div class="ccontainer fdiv">
+        <div class="row">
+          <div class="col-lg-4 coldiv">
+            <p><b>Quick Acccess</b></p>
+            <div class="ftext">
+              <p>lorem ipsum duplex.200</p>
+            <p>1200 connectures</p>
+            <p>Accenture</p>
+            </div>
+          </div>
+          <div class="col-lg-4 coldiv">
+            <p><b>lorem  ipssum</b></p>
+            <div class="ftext">
+              <i class="fab fa-behance"></i>
+              <img src="https://img.icons8.com/material-rounded/24/000000/facebook-f--v2.png"/>
+              <img src="https://img.icons8.com/windows/32/000000/behance.png"/>
+            
+              <img src="https://img.icons8.com/ios-glyphs/30/000000/twitter--v1.png"/>
+              <br>
+              <img src="004-linkedin.png" alt="">
+              <img src="003-google-plus-logo.png" alt="">
+              <img src="002-t.png" alt="">
+             
+            </div>
+          </div>
+          <div class="col-lg-4 coldiv">
+            <p><b>lorem  ipssum</b></p>
+            <div class="ftext">
+              <p>127.0.0.1:550</p>
+            <p>zippy@skype</p>
+            <p>enquiry@zippy.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </Section>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+     $('.owl-carousel').owlCarousel({
+        items:3,
+        
+        loop:true,
+        margin:20,
+        videoWidth:400, // Default false; Type: Boolean/Number
+        videoHeight:300,
+        
+        video:true,
+        dots:true
+        ,
+        stagePadding:10,
+        lazyLoad:true,
+        center:true,
+        responsive:{
+            480:{
+                items:1,
+            },
+            600:{
+                items:2,
+            }
+        }
+    });
+    marginL = 0;
+function leftRight(obj){
+	spaceLeft   = document.getElementById('photo-container').style.marginLeft;
+	spaceLeft   = spaceLeft.replace('px', null);
+	spaceLeft   = parseInt(spaceLeft);
+	step        = 300;
+	totalLength = document.querySelectorAll('.photo-item').length;
+	totalLength *= -115;
+	objId = obj.id;
+	if(objId == 'left'){
+		if(spaceLeft >= -step){
+			marginL = 0;
+		}
+		else{
+			marginL += step;
+		}
+	}
+	if(objId == 'right'){
+		if(spaceLeft <= totalLength + 500 + step){
+			marginL = totalLength  + 500;
+		}
+		else{
+			marginL -= step;
+		}
+	}
+	document.getElementById('photo-container').style.marginLeft = marginL+'px';
+}
+function viewPhoto(obj){
+	objUrl = obj.src;
+	objAlt = obj.alt;
+	document.getElementById('photo-display').innerHTML = '<img src="'+objUrl+'" id="selected-photo" alt="">';
+	document.getElementById('commentary').innerHTML = objAlt;
+	console.log(objAlt);
+}
+
+    </script>
+  </body>
+</html>
